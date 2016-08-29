@@ -839,6 +839,107 @@ public final class DefaultPermissionGrantPolicy {
             grantPermissionsToSystemPackage(pm, systemCaptionsServicePackageName, userId,
                     MICROPHONE_PERMISSIONS);
         }
+
+        // Google App
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.googlequicksearchbox", userId,
+                CALENDAR_PERMISSIONS, CAMERA_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS,
+                MICROPHONE_PERMISSIONS, PHONE_PERMISSIONS, SMS_PERMISSIONS, STORAGE_PERMISSIONS);
+
+        // Google Play Services
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.gms", userId, SENSORS_PERMISSIONS,
+                CALENDAR_PERMISSIONS, CAMERA_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS,
+                MICROPHONE_PERMISSIONS, PHONE_PERMISSIONS, SMS_PERMISSIONS, STORAGE_PERMISSIONS);
+
+        // Persistent Google Play Services
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.gms.persistent", userId, SENSORS_PERMISSIONS,
+                CALENDAR_PERMISSIONS, CAMERA_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS,
+                MICROPHONE_PERMISSIONS, PHONE_PERMISSIONS, SMS_PERMISSIONS, STORAGE_PERMISSIONS);
+
+        // Google Connectivity Services
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.apps.gcs", userId, CONTACTS_PERMISSIONS,
+                ALWAYS_LOCATION_PERMISSIONS);
+
+        // Google Contacts Sync
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.syncadapters.contacts", userId,
+                CONTACTS_PERMISSIONS);
+
+        // Google Backup Transport
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.backuptransport", userId, CONTACTS_PERMISSIONS);
+
+        // Google Play Framework
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.gsf", userId, CONTACTS_PERMISSIONS,
+                PHONE_PERMISSIONS);
+
+        // Google Setup Wizard
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.setupwizard", userId, CONTACTS_PERMISSIONS,
+                PHONE_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS, CAMERA_PERMISSIONS);
+
+        // Google Play Store
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.android.vending", userId, CONTACTS_PERMISSIONS,
+                PHONE_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS, SMS_PERMISSIONS, STORAGE_PERMISSIONS);
+
+        // Project Fi
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.apps.tycho", userId, CONTACTS_PERMISSIONS,
+                PHONE_PERMISSIONS, MICROPHONE_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS, SMS_PERMISSIONS);
+
+        // ContactsProvider2
+        grantSystemFixedPermissionsToSystemPackage(pm,
+                getDefaultProviderAuthorityPackage("com.android.providers.contacts.ContactsProvider2", userId), userId,
+                CONTACTS_PERMISSIONS, STORAGE_PERMISSIONS);
+
+        // Google Calendar
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.calendar", userId, CALENDAR_PERMISSIONS,
+                CONTACTS_PERMISSIONS, PHONE_PERMISSIONS);
+
+        // Chromium Sign-in
+        grantSystemFixedPermissionsToSystemPackage(pm,"org.chromium.chrome", userId, CONTACTS_PERMISSIONS,
+                STORAGE_PERMISSIONS);
+
+        // Google dialer
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.dialer", userId, PHONE_PERMISSIONS,
+                CONTACTS_PERMISSIONS, SMS_PERMISSIONS);
+
+        // Mediascanner
+        grantSystemFixedPermissionsToSystemPackage(pm,
+                getDefaultProviderAuthorityPackage("com.android.providers.media.MediaProvider", userId), userId,
+                STORAGE_PERMISSIONS);
+
+        // Device Personalization Services
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.as", userId, CALENDAR_PERMISSIONS,
+                CAMERA_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS,
+                MICROPHONE_PERMISSIONS, PHONE_PERMISSIONS, SMS_PERMISSIONS);
+
+        // Google sound picker
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.soundpicker", userId, STORAGE_PERMISSIONS);
+
+        // Google Wallpapers
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.apps.wallpaper", userId, PHONE_PERMISSIONS,
+                STORAGE_PERMISSIONS);
+
+        // Pixel Launcher
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.apps.nexuslauncher", userId, PHONE_PERMISSIONS,
+                STORAGE_PERMISSIONS);
+
+        // Pixel Live Wallpapers
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.pixel.livewallpaper", userId, ALWAYS_LOCATION_PERMISSIONS);
+
+        // Google Markup
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.markup", userId, STORAGE_PERMISSIONS);
+
+        // Google Photos
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.apps.photos", userId, CONTACTS_PERMISSIONS,
+                PHONE_PERMISSIONS, STORAGE_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS);
+
+        // Google Recorder
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.apps.recorder", userId, MICROPHONE_PERMISSIONS,
+                ALWAYS_LOCATION_PERMISSIONS);
+
+        // Settings Services
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.settings.intelligence", userId, PHONE_PERMISSIONS,
+                ALWAYS_LOCATION_PERMISSIONS);
+
+        // ThemePicker
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.android.wallpaper", userId, STORAGE_PERMISSIONS);
     }
 
     private String getDefaultSystemHandlerActivityPackageForCategory(PackageManagerWrapper pm,
