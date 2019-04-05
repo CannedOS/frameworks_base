@@ -878,7 +878,7 @@ public class KeyguardViewMediator extends SystemUI implements Dumpable {
             // explicitly DO NOT want to call
             // mKeyguardViewControllerLazy.get().setKeyguardGoingAwayState(false)
             // here, since that will mess with the device lock state.
-            mUpdateMonitor.dispatchKeyguardGoingAway(false);
+            // mUpdateMonitor.dispatchKeyguardGoingAway(false);
 
             // Lock immediately based on setting if secure (user has a pin/pattern/password).
             // This also "locks" the device when not secure to provide easy access to the
