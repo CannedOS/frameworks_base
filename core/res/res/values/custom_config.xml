@@ -60,4 +60,7 @@
     <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false"></string>
 
+    <string-array translatable="false" name="config_customPermissionsList">
+        <item>com.android.wallpaper.livepicker</item>
+    </string-array>
 </resources>
