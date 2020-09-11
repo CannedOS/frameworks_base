@@ -4383,4 +4383,8 @@
 
     <!-- Whether the device has underscreen FingerPrint Sensor-->
     <bool name="config_hasFod">false</bool>
+
+    <!-- Whether the device needs to specify vendor signature -->
+     <string-array name="config_vendorPlatformSignatures">
+     </string-array>
 </resources>

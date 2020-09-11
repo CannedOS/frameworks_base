@@ -4059,4 +4059,7 @@
 
   <!-- Whether the device has Under Screen Fingerprint sensor-->
   <java-symbol type="bool" name="config_hasFod" />
+
+  <!-- Whether the device needs to specify vendor signature -->
+  <java-symbol type="array" name="config_vendorPlatformSignatures" />
 </resources>
