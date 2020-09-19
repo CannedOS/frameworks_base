@@ -21,6 +21,7 @@ import static com.android.internal.config.sysui.SystemUiDeviceConfigFlags.BRIGHT
 import android.content.Context;
 import android.hardware.SensorManager;
 import android.net.Uri;
+import android.content.res.Resources;
 import android.provider.DeviceConfig;
 import android.view.MotionEvent;
 
@@ -37,6 +38,7 @@ import com.android.systemui.dock.DockManager;
 import com.android.systemui.dump.DumpManager;
 import com.android.systemui.plugins.FalsingManager;
 import com.android.systemui.plugins.FalsingPlugin;
+import com.android.systemui.R;
 import com.android.systemui.plugins.PluginListener;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
 import com.android.systemui.shared.plugins.PluginManager;
@@ -129,8 +131,10 @@ public class FalsingManagerProxy implements FalsingManager, Dumpable {
      * Chooses the FalsingManager implementation.
      */
     private void setupFalsingManager(Context context) {
+        Resources res = context.getResources();
         boolean brightlineEnabled = mDeviceConfig.getBoolean(
-                DeviceConfig.NAMESPACE_SYSTEMUI, BRIGHTLINE_FALSING_MANAGER_ENABLED, true);
+                DeviceConfig.NAMESPACE_SYSTEMUI, BRIGHTLINE_FALSING_MANAGER_ENABLED,
+                res.getBoolean(R.bool.config_lockscreenAntiFalsingClassifierEnabled));
         if (brightlineEnabled == mBrightlineEnabled && mInternalFalsingManager != null) {
             return;
         }
