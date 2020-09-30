@@ -60,6 +60,9 @@
     <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false"></string>
 
+    <!-- Whether device has warp charging support -->
+    <bool name="config_hasWarpCharger">false</bool>
+
     <string-array translatable="false" name="config_customPermissionsList">
         <item>com.android.wallpaper.livepicker</item>
     </string-array>
