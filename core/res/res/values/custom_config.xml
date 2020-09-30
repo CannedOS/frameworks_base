@@ -63,6 +63,9 @@
     <!-- Whether device has warp charging support -->
     <bool name="config_hasWarpCharger">false</bool>
 
+    <!-- Whether device has dash charging support -->
+    <bool name="config_hasDashCharger">false</bool>
+
     <string-array translatable="false" name="config_customPermissionsList">
         <item>com.android.wallpaper.livepicker</item>
     </string-array>
