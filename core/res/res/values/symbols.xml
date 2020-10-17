@@ -4056,4 +4056,7 @@
 
   <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
   <java-symbol type="bool" name="config_cleanupUnusedFingerprints" />
+
+  <!-- Whether the device has Under Screen Fingerprint sensor-->
+  <java-symbol type="bool" name="config_hasFod" />
 </resources>

@@ -24,8 +24,6 @@ import android.view.View;
 import com.android.systemui.SystemUI;
 import com.android.systemui.statusbar.CommandQueue;
 
-import lineageos.app.LineageContextConstants;
-
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -45,8 +43,9 @@ public class FODCircleViewImpl extends SystemUI implements CommandQueue.Callback
     @Override
     public void start() {
         PackageManager packageManager = mContext.getPackageManager();
-        if (!packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT) ||
-                !packageManager.hasSystemFeature(LineageContextConstants.Features.FOD)) {
+        boolean hasFod = mContext.getResources().getBoolean(
+            com.android.internal.R.bool.config_hasFod);
+        if (!packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT) || !hasFod) {
             return;
         }
         mCommandQueue.addCallback(this);
