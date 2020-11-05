@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2018 AOSiP
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Scorpion Version -->
+    <string name="scorpion_version">Scorpion version</string>
+
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
+    <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
+    <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
+
+    <!-- QS advanced settings -->
+    <string name="qs_column_rows_settings_title">QS panel settings</string>
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
+    <string name="quick_pulldown_none">Disabled</string>
+    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
+    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
+
+    <!-- QS rows and columns -->
+    <string name="qs_columns_rows_category_title">QS columns and rows</string>
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+</resources>
