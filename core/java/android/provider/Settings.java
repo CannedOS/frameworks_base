@@ -4778,8 +4778,6 @@ public final class Settings {
         public static final String MULTI_AUDIO_FOCUS_ENABLED = "multi_audio_focus_enabled";
 
         /**
-<<<<<<< HEAD
-=======
          * Three Finger Gesture from Oppo
          * @hide
          */
@@ -4829,7 +4827,6 @@ public final class Settings {
         public static final String QS_COLUMNS_LANDSCAPE = "qs_columns_landscape";
 
 	/**
->>>>>>> 0d9a0743c00 (Allow to set QS panel columns and rows [1/2])
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
